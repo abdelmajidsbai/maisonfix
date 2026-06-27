@@ -18,7 +18,7 @@
   <div class="main-image">
     <img id="image0" src="{{asset('images/camera3.jpg')}}" class="slider-image" style="opacity:1;">
     <img id="image1" src="{{asset('images/camera1.jpg')}}" class="slider-image" style="opacity:0;">
-    <img id="image2" src="{{asset('images/camera3.jpg')}}" class="slider-image" style="opacity:0;">
+    <img id="image2" src="{{asset('images/serve.png')}}" class="slider-image" style="opacity:0;">
     
     <div class="hero-text">
       <h1 id="hero-title">{{ __('messages.hero_title') }}</h1>
@@ -29,7 +29,7 @@
     <div class="thumbnail-container">
       <img onclick="changeImage(0)" src="{{asset('images/camera3.jpg')}}" class="thumb active">
       <img onclick="changeImage(1)" src="{{asset('images/camera1.jpg')}}" class="thumb">
-      <img onclick="changeImage(2)" src="{{asset('images/camera3.jpg')}}" class="thumb">
+      <img onclick="changeImage(2)" src="{{asset('images/renovation_complete.png')}}" class="thumb">
     </div>
 
   </div>
@@ -102,7 +102,7 @@
         <h3>{{$product->name}}</h3>
         <p>{{$product->price}} MAD</p>
         <div class='chek-product'>
-          <!-- Add to cart AJAX form (like products page) -->
+          
       <form class="add-to-cart-form" action="{{ route('cart.store', $product->id) }}" method="POST" data-product-id="{{ $product->id }}">
         @csrf
         <input type="hidden" name="name" value="{{ $product->name }}">
@@ -152,7 +152,7 @@
             <p>{{ __('messages.security_camera_service_3') }}</p>
 
           @elseif($service->name === 'Installation électrique domestique')
-            <p>Services complets d’installation, de réparation et d’entretien électrique selon les normes de sécurité les plus strictes.</p>
+            <p>{{ __('messages.security_camera_service_4') }}</p>
 
           @else
             <p>Service de qualité adapté à vos besoins spécifiques.</p>
@@ -187,7 +187,7 @@
 
 @include('layouts.footer')
 
-<a href="https://wa.me/212670868749?text=Hello" target="_blank" 
+<a href="https://wa.me/212709023673?text=Hello" target="_blank" 
   style="
      position: fixed;
      bottom: 20px;
@@ -240,16 +240,6 @@ const thumbs = document.querySelectorAll('.thumb');
 let currentIndex = 0;
 let slideInterval;
 
-// function changeImage(index){
-//   currentIndex = index;
-//   sliderImages.forEach((img,i)=>{
-//     img.style.opacity = i === currentIndex ? '1' : '0';
-//   });
-//   thumbs.forEach((thumb,i)=>{
-//     thumb.classList.toggle('active', i===currentIndex);
-//   });
-//   resetInterval();
-// }
 function changeImage(index){
   currentIndex = index;
   
@@ -356,16 +346,16 @@ startSlide();
 
   const heroTexts = [
   {
-    title: "Installation professionnelle de caméras de surveillance",
-    subtitle: "Protection, Sécurité et Technologie pour votre maison et entreprise"
+    title: "{{ __('messages.heroTitle1') }}",
+    subtitle: "{{ __('messages.heroParag1') }}"
   },
   {
-    title: "Installation électrique domestique",
-    subtitle: "Pose et réparation de câbles, prises, interrupteurs et tableaux électriques en toute sécurité."
+    title: "{{ __('messages.heroTitle2') }}",
+    subtitle: "{{ __('messages.heroParag2') }}"
   },
   {
-    title: "Caméras HD avec contrôle à distance",
-    subtitle: "Visualisez votre domicile ou bureau depuis n'importe où"
+    title: "{{ __('messages.heroTitle3') }}",
+    subtitle: "{{ __('messages.heroParag3') }}"
   }
 ];
 

@@ -11,12 +11,13 @@ return [
     'hero_subtitle' => 'Protection, Sécurité et Technologie pour votre maison et entreprise',
     'categories' => 'Nos Catégories',
     'discover' => 'Découvrir',
-    'buy_now' => 'Acheter Maintenant',
+    'buy_now' => 'Commander vite',
     'view_all_products' => 'Voir tous les produits',
     'service_explanation' => 'Explication du service :',
     'security_camera_service_1' => 'Installation professionnelle de caméras de surveillance pour protéger votre maison ou entreprise 24h/24.',
     'security_camera_service_2' => 'Mise en place de systèmes domotiques et de surveillance connectés pour un contrôle à distance.',
     'security_camera_service_3' => 'Vérification et entretien régulier de vos caméras pour garantir leur fonctionnement optimal.',
+    'security_camera_service_4' => 'Services complets d’installation, de réparation et d’entretien électrique selon les normes de sécurité les plus strictes .',
     'view_more' => 'Voir plus',
     'view_all_services' => 'Voir tous les services',
     'products' => 'Produits',
@@ -38,4 +39,13 @@ return [
     'cart_summary' => 'Résumé du panier',
     'total_price' => 'Prix total :',
     'checkout' => 'Commander',
+
+    'heroTitle1' => 'Installation professionnelle de caméras de surveillance',
+    'heroParag1' => 'Protection, Sécurité et Technologie pour votre maison et entreprise',
+
+    'heroTitle2' => 'Installation électrique domestique',
+    'heroParag2' => 'Pose et réparation de câbles, prises, interrupteurs et tableaux électriques en toute sécurité.',
+
+    'heroTitle3' => 'Rénovation complète et entretien de maison',
+    'heroParag3' => 'Des services complets de rénovation et de maintenance pour améliorer le confort',
 ];
