@@ -106,7 +106,7 @@ public function store(Request $request)
 
     $message .= "\n💰 *Total:* {$total} DH";
 
-    $adminPhone = '212670868749';
+    $adminPhone = '212709023673';
     $whatsAppUrl = "https://wa.me/{$adminPhone}?text=" . rawurlencode($message);
 
     // Clear cart
